@@ -515,7 +515,6 @@ h4,
     background-position: left;
     background-repeat: repeat-y;
     background-size: 50px;
-    overflow-y: auto;
 }
 
 .home-to-current {
@@ -755,6 +754,8 @@ h4,
     .home-main-content {
         height: 120vh ;
         padding-top: 200px;
+        overflow-y: auto;
+
     }
 
     .archive-footer .side-bzl-logo {
