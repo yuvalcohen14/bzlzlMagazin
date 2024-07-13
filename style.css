@@ -690,9 +690,6 @@ h4,
         content: ">>>";
     }
 
-    .footer-manu li::after {
-        /* content: "\n--";  */
-    }
 
     .footer-bar {
         width: 15vw;
@@ -732,7 +729,9 @@ h4,
 
 @media screen and (max-width:850px) {
     .home-sidebar {
-        display: none;
+        position: relative;
+        transform: translateX(100%);
+        z-index: 9999;
     }
 
     .home-main-content {
@@ -740,9 +739,27 @@ h4,
         padding-right: 0;
     }
 
-    /* #home-sidebar:target{
-        display: block;
-    } */
+    #home-sidebar:target {
+        animation: slideIn 1s forwards;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .home-sidebar .close-sidebar {
+        border: 0.1pt black solid;
+        padding: 10px;
+        border-radius: 50%;
+        font-weight: bold;
+        margin: 300px 20px;
+    }
 
 }
 
