@@ -464,25 +464,18 @@ h4,
 }
 
 .home-main {
-    background-image: url(imgs/hole_carton.jpg);
-    background-position: left;
-    background-repeat: repeat-y;
-    background-size: 50px;
-    background-color: #FFFEF7;
-    padding: 70px;
+    padding-top: 50px;
     transform: rotate(-3deg);
     z-index: 2;
     display: flex;
     position: fixed;
     height: 100vh;
-    top: 0;
+    top: 5;
     left: 10%;
     width: 90vw;
-    display: flex;
     align-items: start;
     flex-direction: column;
-    box-shadow:
-        -0.7vh 0.5vh 1.2vh -5px #0000005b;
+
 }
 
 .home-main-about {
@@ -491,8 +484,6 @@ h4,
     width: 50vw;
     columns: 2 220px;
     margin: 20px;
-    overflow-y: auto;
-
 }
 
 .home-body p {
@@ -514,9 +505,17 @@ h4,
 }
 
 .home-main-content {
+    background-color: #FFFEF7;
+    box-shadow:
+        -0.7vh 0.5vh 1.2vh -5px #0000005b;
     display: flex;
     flex-direction: row;
-    padding: 70px;
+    padding: 100px;
+    background-image: url(imgs/hole_carton.jpg);
+    background-position: left;
+    background-repeat: repeat-y;
+    background-size: 50px;
+    overflow-y: auto;
 }
 
 .home-to-current {
@@ -566,32 +565,47 @@ h4,
 
 @media screen and (max-width:1250px) {
     .home-main {
-        rotate: -90deg;
-        margin-left: -15vh;
-        margin-top: 12vw;
+        flex-direction: row-reverse;
+        width: 100%;
+        left: 0;
+        right: 0;
     }
 
-    .home-main-title h1{
+    .home-main-title {
+        rotate: -90deg;
+        margin-left: 15vh;
+        margin-top: 12vh;
+        width: 10vh;
+    }
+
+    .home-main-title h1 {
         position: absolute;
+        width: 100vh;
+        padding-top: 70px;
+        padding-left: 0;
         font-size: 12vh;
         z-index: 1;
-        margin-left: 0;
 
     }
-.home-to-current{
-    margin-right: -10vw;
-    max-width: 900px;
-}
-.home-main{
-    background-color: transparent;
-}
+
+    .home-to-current {
+        align-self: center;
+        max-width: 500px;
+    }
+
     .home-main-content {
-        rotate: 90deg;
-        width: 70vw;
-        margin-top: -13vw;
+        width: 95vw;
+        padding-right: 200px;
+        margin-top: -120px;
         flex-direction: column;
+        align-items: flex-start;
         background-color: #FFFEF7;
         z-index: 2;
+    }
+
+    .home-main-about {
+        padding-right: 0;
+        /* padding-right: 100px; */
     }
 
     .archive-list {
@@ -717,7 +731,32 @@ h4,
     }
 }
 
+@media screen and (max-width:850px) {
+    .home-sidebar {
+        display: none;
+    }
+
+    .home-main-content {
+        align-items: center;
+        padding-right: 0;
+    }
+
+    /* #home-sidebar:target{
+        display: block;
+    } */
+
+}
+
 @media screen and (max-width:700px) {
+    .home-main-title {
+        display: none;
+    }
+
+    .home-main-content {
+        height: 120vh ;
+        padding-top: 200px;
+    }
+
     .archive-footer .side-bzl-logo {
         width: max(300px, 25vw);
         padding: 0;
