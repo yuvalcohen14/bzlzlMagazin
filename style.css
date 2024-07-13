@@ -39,8 +39,8 @@ html {
 
 :root {
     --folder-rad: 80px;
-    --H: 'Narkiss Text Variable', 'David';
-    --thin-text: 'Narkiss Yair Variable', 'Assistant', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --H: 'narkiss-text-variable', 'David';
+    --thin-text: 'narkiss-yair-variable', 'Assistant', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --title-line-height: 6.6vw;
     --bg-color: #FFFEF7;
     --carton-color: #D2C2A4;
@@ -96,9 +96,9 @@ h3,
 h4,
 .title {
     font-family: var(--H);
-    font-weight: 900;
-    letter-spacing: -0.06em;
-    line-height: 0.85em;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 0.7em;
 }
 
 .sub-title {
@@ -493,11 +493,10 @@ h4,
 
 .home-main-title h1 {
     font-size: 10vw;
-    margin-top: calc(-2vw - 50px);
+    margin-top: calc(-2vw - 110px);
     transform: rotate(-1.5deg);
     padding: 15vh 12vw 50px 400px;
     width: 110vw;
-    margin-top: -200px;
     margin-right: -10vw;
     background-color: white;
     border-bottom: black solid 10px;
@@ -573,7 +572,7 @@ h4,
 
     .home-main-title {
         rotate: -90deg;
-        margin-left: 15vh;
+        margin-left: 5vh;
         margin-top: 12vh;
         width: 10vh;
     }
