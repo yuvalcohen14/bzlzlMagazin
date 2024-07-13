@@ -39,7 +39,7 @@ html {
 
 :root {
     --folder-rad: 80px;
-    --H: 'Narkiss Text', 'David';
+    --H: 'Narkiss Text Variable', 'David';
     --thin-text: 'Narkiss Yair Variable', 'Assistant', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --title-line-height: 6.6vw;
     --bg-color: #FFFEF7;
@@ -48,6 +48,7 @@ html {
     --pink-note-color: #ffb3dd;
 
 }
+
 
 .mobile {
     display: none;
@@ -752,7 +753,7 @@ h4,
     }
 
     .home-main-content {
-        height: 120vh ;
+        height: 120vh;
         padding-top: 200px;
         overflow-y: auto;
 
