@@ -873,6 +873,9 @@ h4,
 }
 
 @media screen and (max-width:850px) {
+    .reports {
+        min-width: 0;
+    }
     .home-sidebar {
         position: relative;
         transform: translateX(100%);
