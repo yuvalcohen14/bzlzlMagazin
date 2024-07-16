@@ -58,6 +58,7 @@ html {
     margin: 0 auto;
     width: 300px;
     padding: 15px;
+    margin-top: -5vh;
     font-size: 10vh;
     background-color: white;
     border: black 5pt solid;
@@ -111,7 +112,32 @@ html {
     border-radius: 5%;
 
 }
+.ten-articles-list a{
+    border: 5px solid var(--carton-color);
+}
+.ten-first-col a{
+    rotate: -2deg;
+    border-left: 20px solid var(--carton-color);
+    border-right: 20px solid var(--carton-color);
 
+    margin: 5px 20px;}
+
+.ten-sec-col a{
+    rotate: 2deg;
+    border-left: 20px solid var(--carton-color);
+    border-right: 20px solid var(--carton-color);
+    margin: 5px 20px;
+}
+.ten-sec-col a:nth-child(3){
+    rotate: -1deg;
+}
+
+.ten-first-col a:nth-child(3){
+    rotate: 1deg;
+}
+.ten-articles-list h3{
+    margin-bottom: -10px;
+}
 .ten-main-content {
     display: flex;
     flex-direction: row;
@@ -120,8 +146,12 @@ html {
 .ten-articles-list a {
     display: block;
     padding: 5px;
+    box-shadow:
+    -0.7vh 0.5vh 1.2vh -5px #0000005b;
 }
-
+.ten-articles-list a:hover{
+    rotate: -0.5deg;
+}
 .ten-articles-list li {
     border: dotted black 1pt;
     padding: 20px;
