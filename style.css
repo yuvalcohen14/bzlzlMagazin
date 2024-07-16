@@ -54,6 +54,94 @@ html {
     display: none;
 }
 
+.ten-title {
+    margin: 0 auto;
+    width: 300px;
+    padding: 15px;
+    font-size: 10vh;
+    background-color: white;
+    border: black 5pt solid;
+}
+
+.ten-body {
+    background-color: var(--carton-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.ten-wrapper {
+    align-self: center;
+    background-color: var(--bg-color);
+    background-image: url(imgs/hole_carton.jpg), url(imgs/hole_carton.jpg);
+    background-repeat: repeat-y, repeat-y;
+    background-position: left, right;
+    background-size: 50px;
+    width: 90vw;
+    height: max(100vh, fit-content);
+    padding: 70px;
+}
+
+.ten-articles-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.ten-first-col div,
+.ten-sec-col div {
+    border-top: dotted black 1pt;
+    padding: 10px;
+}
+
+.ten-first-col,
+.ten-sec-col,
+.ten-cover {
+    width: calc(30vw - 50px);
+    height:fit-content ;
+}
+
+.ten-cover {
+}
+
+.ten-first-col {
+    text-align: left;
+}
+
+.ten-cover {
+    rotate: 2deg;
+    margin-top: -20px;
+}
+
+.ten-main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.ten-articles-list a {
+    display: block;
+    padding: 5px;
+}
+
+.ten-articles-list li {
+    border: dotted black 1pt;
+    padding: 20px;
+
+}
+
+.ten-articles-list h3 {
+    padding-bottom: 20px;
+}
+
+.ten-wrapper .side-bzl-logo {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    margin: 0;
+    margin-top: -80px;
+
+}
+
 .note:hover {
     transform: rotate(2deg);
     transition: 0.3s ease-out, 0.3s ease-out;
@@ -250,15 +338,15 @@ h4,
     box-shadow: inset 3px 4px 4.1px 0 #0000005b;
 }
 
+
 .side-bzl-logo {
     rotate: -5deg;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -50px;
     background-color: var(--green-note-color);
     padding: 90px 0px 5vw 0;
-    transform: translateY(-50px) translateX(40px);
-    /* width: 400px; */
     z-index: 2;
 }
 
@@ -428,7 +516,7 @@ h4,
 
 }
 
-.home-side-list li:nth-child(4) {
+.home-side-list a li:nth-child(4) {
     transform: rotate(5deg);
 }
 
@@ -531,25 +619,26 @@ h4,
     border-top-right-radius: 50px;
 }
 
-.home-to-current h4 {
-    /* rotate: -90deg;
-    width: 20vw;
-    text-wrap: nowrap;
-    font-size: 3vh; */
+.home-to-current h2 {
     width: 10%;
     display: flex;
-    align-items: center;
     justify-content: right;
     flex: 1 1 auto;
     min-width: 100px;
     transform: rotate(-90deg);
     white-space: nowrap;
+    padding-top: 20px;
     margin-top: 50px;
 }
 
-.home-read-more {
-    font-size: 2vw;
+.home-to-current .home-read-more {
+    display: block;
+    padding: 0 20px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
 }
+
+
 
 .home-current-cover {
     border-bottom-left-radius: 50px;
@@ -563,6 +652,18 @@ h4,
 }
 
 @media screen and (max-width:1250px) {
+    .ten-articles-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ten-first-col,
+    .ten-cover,
+    .ten-sec-col {
+width: 70%;
+min-width: 200px;
+    }
+
     .home-main {
         flex-direction: row-reverse;
         width: 100%;
