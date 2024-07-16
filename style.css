@@ -97,10 +97,11 @@ html {
 
 .ten-first-col,
 .ten-sec-col,
-.ten-cover{
+.ten-cover {
     width: calc(30vw - 50px);
-    height: fit-content ;
+    height: fit-content;
 }
+
 .ten-first-col {
     text-align: left;
 }
@@ -112,32 +113,38 @@ html {
     border-radius: 5%;
 
 }
-.ten-articles-list a{
+
+.ten-articles-list a {
     border: 5px solid var(--carton-color);
 }
-.ten-first-col a{
+
+.ten-first-col a {
     rotate: -2deg;
     border-left: 20px solid var(--carton-color);
     border-right: 20px solid var(--carton-color);
 
-    margin: 5px 20px;}
+    margin: 5px 20px;
+}
 
-.ten-sec-col a{
+.ten-sec-col a {
     rotate: 2deg;
     border-left: 20px solid var(--carton-color);
     border-right: 20px solid var(--carton-color);
     margin: 5px 20px;
 }
-.ten-sec-col a:nth-child(3){
+
+.ten-sec-col a:nth-child(3) {
     rotate: -1deg;
 }
 
-.ten-first-col a:nth-child(3){
+.ten-first-col a:nth-child(3) {
     rotate: 1deg;
 }
-.ten-articles-list h3{
+
+.ten-articles-list h3 {
     margin-bottom: -10px;
 }
+
 .ten-main-content {
     display: flex;
     flex-direction: row;
@@ -147,11 +154,13 @@ html {
     display: block;
     padding: 5px;
     box-shadow:
-    -0.7vh 0.5vh 1.2vh -5px #0000005b;
+        -0.7vh 0.5vh 1.2vh -5px #0000005b;
 }
-.ten-articles-list a:hover{
+
+.ten-articles-list a:hover {
     rotate: -0.5deg;
 }
+
 .ten-articles-list li {
     border: dotted black 1pt;
     padding: 20px;
@@ -353,9 +362,13 @@ h4,
     z-index: 3;
 
 }
-
+.side-article-title.bird
+{
+    height: fit-content;
+}
 .side-article-title.bird h1 {
     font-size: 5.6rem;
+    padding-bottom: 50px;
 }
 
 .hole {
@@ -689,8 +702,8 @@ h4,
     .ten-first-col,
     .ten-cover,
     .ten-sec-col {
-width: 70%;
-min-width: 200px;
+        width: 70%;
+        min-width: 200px;
     }
 
     .home-main {
