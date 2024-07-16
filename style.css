@@ -96,21 +96,20 @@ html {
 
 .ten-first-col,
 .ten-sec-col,
-.ten-cover {
+.ten-cover{
     width: calc(30vw - 50px);
-    height:fit-content ;
+    height: fit-content ;
 }
-
-.ten-cover {
-}
-
 .ten-first-col {
     text-align: left;
 }
 
 .ten-cover {
     rotate: 2deg;
-    margin-top: -20px;
+    transform: scale(1.1);
+    border: var(--carton-color) 25px solid;
+    border-radius: 5%;
+
 }
 
 .ten-main-content {
